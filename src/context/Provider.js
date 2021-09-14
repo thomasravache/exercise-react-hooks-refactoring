@@ -10,7 +10,7 @@ function Provider({ children }) {
     blue: false,
     yellow: false,    
   });
-  const [signal, setSignal] = useState('red');
+  const [signalColor, setSignal] = useState('red');
 
   const moveCar = (car, side) => {
     setCars({
@@ -26,7 +26,7 @@ function Provider({ children }) {
   const context = {
     getters: {
       cars,
-      signal,
+      signalColor,
     },
     setters: {
       moveCar,
